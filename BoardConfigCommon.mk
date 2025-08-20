@@ -48,11 +48,10 @@ TARGET_KERNEL_CONFIG := lineage_oneplus5_defconfig
 BOARD_USES_QCOM_HARDWARE := true
 
 # ANT+
-BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Audio
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
-BOARD_SUPPORTS_SOUND_TRIGGER := true
+BOARD_SUPPORTS_SOUND_TRIGGER := false
 BOARD_USES_ALSA_AUDIO := true
 
 # Display
@@ -123,7 +122,6 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Verity
 # Only needed for signing
-BOARD_AVB_ENABLE := false
 
 # VNDK
 BOARD_VNDK_VERSION := current

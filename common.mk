@@ -7,7 +7,6 @@
 $(call inherit-product, vendor/oneplus/msm8998-common/msm8998-common-vendor.mk)
 
 # APEX
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 PRODUCT_COMPRESSED_APEX := false
 
 # Setup dalvik vm configs
@@ -18,7 +17,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
-PRODUCT_ENFORCE_RRO_TARGETS += *
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -75,7 +73,6 @@ PRODUCT_CHARACTERISTICS := nosdcard
 
 # ANT+
 PRODUCT_PACKAGES += \
-    AntHalService-Soong \
     com.dsi.ant@1.0.vendor
 
 # Audio
@@ -218,10 +215,8 @@ PRODUCT_PACKAGES += \
 
 # IFAA (Fingerprint support for Alipay)
 PRODUCT_PACKAGES += \
-    org.ifaa.android.manager
 
 PRODUCT_BOOT_JARS += \
-    org.ifaa.android.manager
 
 # IRQ
 PRODUCT_COPY_FILES += \
