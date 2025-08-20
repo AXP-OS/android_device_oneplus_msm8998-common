@@ -35,7 +35,7 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 vidc.enc.dcvs.extra-buff-count=2
 
 # OEM Unlock
-ro.oem_unlock_supported=1
+ro.oem_unlock_supported=0
 
 # RIL
 keyguard.no_require_sim=true
@@ -61,3 +61,7 @@ persist.dbg.wfc_avail_ovr=1
 
 # Wi-Fi
 wifi.interface=wlan0
+
+sys.oem_unlock_allowed=0
+
+ro.boot.flash.locked=0
