@@ -3,3 +3,9 @@ dalvik.vm.dex2oat64.enabled=true
 
 # DPM
 persist.vendor.dpm.feature=11
+
+ro.oem_unlock_supported=0
+
+sys.oem_unlock_allowed=0
+
+ro.boot.flash.locked=0
